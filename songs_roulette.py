@@ -712,10 +712,12 @@ class MainWindow(QtWidgets.QMainWindow):
         v.addWidget(self._hline())
 
         # Random generation section
+
+        self.secTitle = QtWidgets.QLabel(f"<b>{LANG[lang_key]["random_section"]}</b>")
+        v.addWidget(self.secTitle)
         # secTitle = QtWidgets.QLabel(f"<b>{LANG[lang_key]['random_section']}</b>")
+        # secTitle = QtWidgets.QLabel()
         # v.addWidget(secTitle)
-        secTitle = QtWidgets.QLabel()
-        v.addWidget(secTitle)
 
         form = QtWidgets.QFormLayout()
 
@@ -797,6 +799,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.tracksLabel.setText(LANG[self.lang_key]["num_songs"])
         self.playlistEleccion.setText(LANG[self.lang_key]["source_playlist"])
         self.playlistName.setText(LANG[self.lang_key]["playlist_name"])
+        self.secTitle.setText(f"<b>{LANG[self.lang_key]["random_section"]}</b>")
         # Labels in the form are static; easiest is to reconstruct:
         # (In a production app, keep references to QLabel form items.)
 
