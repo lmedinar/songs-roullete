@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+data.json
+key.bin
+.songs_roulette.py.~undo-tree~
+..gitignore.~undo-tree~
+.cache-spotify-rand
+config.ini
+settings.json
